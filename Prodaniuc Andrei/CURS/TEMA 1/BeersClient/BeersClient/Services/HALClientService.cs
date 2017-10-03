@@ -24,7 +24,7 @@ namespace BeersClient.Services
         {
             var response = _client.GetAsync("breweries/").Result;
             var jsonString=response.Content.ReadAsStringAsync().Result;
-            var resource = JsonConvert.DeserializeObject<Resource>(jsonString);
+            var resource = JsonConvert.DeserializeObject<BreweryResource>(jsonString);
             return resource.Embedded.Brewery.ToList();
         }
 
@@ -35,11 +35,11 @@ namespace BeersClient.Services
             return JsonConvert.DeserializeObject<Brewery>(jsonString);
         }
 
-        internal List<Beer> GetBeers(string beers)
+        internal BeerResource GetBeers(string beers)
         {
             var response = _client.GetAsync(beers).Result;
             var jsonString = response.Content.ReadAsStringAsync().Result;
-            return JsonConvert.DeserializeObject<List<Beer>>(jsonString);
+            return JsonConvert.DeserializeObject<BeerResource>(jsonString);
         }
         public Beer GetBeer(string beer)
         {
