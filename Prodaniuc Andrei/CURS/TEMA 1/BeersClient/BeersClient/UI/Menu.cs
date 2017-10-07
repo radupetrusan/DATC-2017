@@ -43,15 +43,9 @@ namespace BeersClient.UI
             Console.WriteLine("q-Quis");
         }
 
-        internal static void Display(BeerResource beerResource)
+        public static void Display(Beer beer)
         {
-            foreach(var beer in beerResource.Embedded.Beer)
-            {
-                Console.WriteLine(beer.Name);
-            }
 
-            Console.WriteLine("q-quit");
-            Console.WriteLine("b-back");
         }
     }
 }
