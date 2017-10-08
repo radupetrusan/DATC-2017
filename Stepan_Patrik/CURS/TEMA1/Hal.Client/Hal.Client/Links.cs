@@ -9,19 +9,12 @@ namespace Hal.Client
 {
     public class Links
     {
-        [JsonProperty("beers")]
-        public BeerFef beers { get; set; }
+        /*[JsonProperty("beers")]
+        public BeerFef beers { get; set; }*/
 
         [JsonProperty("self")]
         public BreweryRef self { get; set; }
     };
 
-    public class ExtLinks
-    {
-        [JsonProperty("brewery")]
-        public BreweryRef[] brewery { get; set; }
 
-        [JsonProperty("self")]
-        ResourceRef self { get; set; }
-    }
 }
