@@ -8,19 +8,26 @@ using System.Threading.Tasks;
 
 namespace Hal.Client
 {
-	class Program
-	{
-		static void Main(string[] args)
-		{
-			var client = new HttpClient();
-			var response = client.GetAsync("http://datc-rest.azurewebsites.net/beers").Result;
 
-			var data = response.Content.ReadAsStringAsync().Result;
-			var obj = JsonConvert.DeserializeObject(data);
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var client = new HttpClient();
+            client.DefaultRequestHeaders.Add("Accept", "application/hal+json");
+            var response = client.GetAsync("http://datc-rest.azurewebsites.net/breweries").Result;
 
-			Console.WriteLine(data);
 
-			Console.ReadLine();
-		}
-	}
+            var data = response.Content.ReadAsStringAsync().Result;
+            var obj = JsonConvert.DeserializeObject<Resource>(data);
+
+            List<Brewery> breweries = obj.embedded.brewery.ToList();
+            foreach (var brewery in breweries)
+            {
+                Console.WriteLine(brewery.id + " " + brewery.name + "\n");
+            }
+
+            Console.ReadLine();
+        }
+    }
 }
