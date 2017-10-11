@@ -22,12 +22,19 @@ import java.net.URL;
 public class fetchData extends AsyncTask<Void,Void,Void> {
     String data = "";
     String dataParsed = "";
+    String test;
     String singleParsed = "";
+    String singleParsed1 = "";
+    String dataParsed1 = "";
+    String singleParsed2 = "";
+    String dataParsed2 = "";
     @Override
     protected Void doInBackground(Void... voids) {
         try {
             URL url = new URL("https://datc-rest.azurewebsites.net/breweries");
             HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
+            httpURLConnection.setRequestProperty("accept","application/hal+json");
+            httpURLConnection.setRequestProperty("content-type","application/json");
             InputStream inputStream = httpURLConnection.getInputStream();
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
             String line = "";
@@ -36,21 +43,32 @@ public class fetchData extends AsyncTask<Void,Void,Void> {
                 data = data + line;
             }
 
-            JSONObject parentObject = new JSONObject(data);
-            JSONArray parentArray = parentObject.getJSONArray("ResourceList");
-            for(int i=0;i<parentArray.length();i++) {
-                JSONObject finalObject = parentArray.getJSONObject(i);
+            JSONObject parentObject = new JSONObject(data); // obiectul intreg
 
-                String id = finalObject.getString("Id");
-                String name = finalObject.getString("Name");
+            JSONObject links = parentObject.getJSONObject("_links");//ramura links din obiectul mare
 
-                singleParsed = singleParsed + "Id:" + id + "\n" +
-                        "Nume:" + name + "\n"+"\n";
+            // pt obiectul brewery din links
+            JSONArray breweryArray = links.getJSONArray("brewery");
+            for(int i =0;i<breweryArray.length();i++){
+                JSONObject breweryFinal = breweryArray.getJSONObject(i);
+                singleParsed1 = "href:" + breweryFinal.getString("href")+"\n";
+                dataParsed1 = dataParsed1+singleParsed1+"\n";
 
             }
 
-            dataParsed = dataParsed+singleParsed+"\n";
+            JSONObject embedded = parentObject.getJSONObject("_embedded");//ramura _embedded din obiectul mare
 
+            // pt obiectul brewery din _embedded
+            JSONArray embeddedArray = embedded.getJSONArray("brewery");
+            for(int j =0;j<embeddedArray.length();j++){
+                JSONObject embeddedFinal = embeddedArray.getJSONObject(j);
+
+                singleParsed = "ID:" + embeddedFinal.getString("Id")+"\n"+
+                        "Nume:"+embeddedFinal.getString("Name")+"\n";
+                dataParsed = dataParsed+singleParsed+"\n";
+            }
+
+           // test = brewery1.toString();
 
         } catch (MalformedURLException e) {
             e.printStackTrace();
@@ -66,6 +84,7 @@ public class fetchData extends AsyncTask<Void,Void,Void> {
     @Override
     protected void onPostExecute(Void aVoid) {
         super.onPostExecute(aVoid);
-        MainActivity.data.setText(this.dataParsed);
+        //SecondActivity.data1.setText(this.test);
+        SecondActivity.data1.setText(this.dataParsed);
     }
 }
