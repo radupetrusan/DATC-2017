@@ -10,38 +10,31 @@ namespace Hal.Client
     public class JSONResources
     {
         [JsonProperty("_embedded")]
-        public Embedded embedded { get; set; }
+        public CHomeEmbedded homeEmbedded { get; set; }
 
         [JsonProperty("_links")]
-        public Links links { get; set; }
+        public CHomeLinks homeLinks { get; set; }
 
     }
 
-    public partial class Embedded
+    public partial class CHomeEmbedded
     {
         [JsonProperty("brewery")]
-        public CBreweryEmbedded[] brewery { get; set; }
+        public CBrewery[] brewery { get; set; }
     }
 
-    public class Links
+    public class CHomeLinks
     {
         [JsonProperty("brewery")]
-        public List<LBrwHref> brewery { get; set; }
+        public List<CHomeBreweryLinks> brewery { get; set; }
 
         [JsonProperty("self")]
-        public LinkSelf selfLink { get; set; }
+        public CHomeSelfLinks selfLink { get; set; }
     }
 
-    public class LBrwHref
+    public class CHomeSelfLinks
     {
         [JsonProperty("href")]
-        public string hrefBrewery { get; set; }
-
-    }
-
-    public class LinkSelf
-    {
-        [JsonProperty("href")]
-        public string hrefSelf { get; set; }
+        public string hrefHome { get; set; }
     }
 }

@@ -7,38 +7,45 @@ using Newtonsoft.Json;
 
 namespace Hal.Client
 {
-    public class CBreweryEmbedded
+    public class CBrewery
     {
-        [JsonProperty("_links")]
-        public CBrewreyLink links { get; set; }
-
         [JsonProperty("Id")]
-        public int id { get; set; }
+        public int breweryId { get; set; }
 
         [JsonProperty("Name")]
-        public string name { get; set; }
+        public string breweryName { get; set; }
+
+        [JsonProperty("_links")]
+        public CBrewreyLinks breweryLinks { get; set; }
     }
 
-    public class CBrewreyLink
+    public class CBrewreyLinks
     {
         //beers and self
         [JsonProperty("beers")]
-        public EBrwBeers beers { get; set; }
+        public CBrewerywBeers beers { get; set; }
 
         [JsonProperty("self")]
-        public EBrwSelf self { get; set; }
+        public CBrewerySelf self { get; set; }
 
     }
 
-    public class EBrwBeers
+    public class CBrewerywBeers
     {
         [JsonProperty("href")]
-        public string href { get; set; }
+        public string hrefBrewerywBeers { get; set; }
     }
 
-    public class EBrwSelf
+    public class CBrewerySelf
     {
         [JsonProperty("href")]
-        public string href { get; set; }
+        public string hrefBrewerySelf { get; set; }
+    }
+
+    public class CHomeBreweryLinks
+    {
+        [JsonProperty("href")]
+        public string hrefBrewery { get; set; }
+
     }
 }
