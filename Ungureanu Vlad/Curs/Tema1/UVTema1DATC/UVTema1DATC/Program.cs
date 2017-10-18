@@ -4,7 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
+using System.Net;
+using System.IO;
 using System.Net.Http;
+using System.Net.Http.Headers;
 
 namespace UVTema1DATC
 {
@@ -184,13 +187,6 @@ namespace UVTema1DATC
         }
         static void Main(string[] args)
         {
-              /*HttpClient client = new HttpClient();
-              client.DefaultRequestHeaders.Add("Accept", "application/hal+json");
-              var response = client.GetAsync("http://datc-rest.azurewebsites.net/beers").Result;
-              string data = response.Content.ReadAsStringAsync().Result;
-              var obj = JsonConvert.DeserializeObject(data);
-              Console.WriteLine(obj.ToString());
-           */
             int optiune = 1, optiune2 = 0;
             string infoBeri;
             while (optiune != 0)
@@ -204,27 +200,30 @@ namespace UVTema1DATC
                     Console.Write("Optiune:");
                     int.TryParse(Console.ReadLine(), out optiune);
                 }
-                if(optiune==-1)
-                {  
+                if (optiune == -1)
+                {
+                    //POST Beer
                     int idBeree = 0;
-                    string numeBeree="";
+                    string numeBeree = "";
                     Console.Clear();
                     Console.WriteLine("-----Adauga Bere-----");
                     Console.Write("IdBere:");
                     int.TryParse(Console.ReadLine(), out idBeree);
                     Console.Write("NumeBere:");
                     numeBeree = Console.ReadLine();
-                    HttpContent continut = new FormUrlEncodedContent(new[]
-                    {
-                        new KeyValuePair<string,string>("Id:",idBeree.ToString()),
-                        new KeyValuePair<string,string>("Name:",numeBeree)
-                    });
-                    var myHttpClient = new HttpClient();
-                    var resp= myHttpClient.PostAsync("http://datc-rest.azurewebsites.net/beers", continut);
-                    
+                    PostBeer newBeer = new PostBeer(idBeree, numeBeree);
+                    StringContent continut = new StringContent(JsonConvert.SerializeObject(newBeer));
+                    var ClientHTTP = new HttpClient();
+                    ClientHTTP.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                    continut.Headers.ContentType = new MediaTypeWithQualityHeaderValue("application/json");
+                    var raspuns = ClientHTTP.PostAsync("http://datc-rest.azurewebsites.net/beers", continut).Result;
+                    Console.WriteLine(raspuns);
+                    Console.WriteLine("Apasati orice tasta pentru a revenii la meniul principal");
+                    Console.ReadKey();
                 }
                 if (optiune > 0 && optiune <= FabriciDeBere.Count)
                 {
+                    //Detalii berarie
                     infoBeri = AfisareDetaliiBerarie(FabriciDeBere[optiune - 1].LinkToBrewerie);
                     string[] infosplit = infoBeri.Split('@');
                     if (infosplit[0].Equals("0"))
@@ -263,7 +262,7 @@ namespace UVTema1DATC
                                 var response = client.GetAsync(Home + ListaBeri[int.Parse(infoDetalii[1])].LinkToStyle).Result;
                                 string data = response.Content.ReadAsStringAsync().Result;
                                 data = response.Content.ReadAsStringAsync().Result;
-                                data=ClearString(data);
+                                data = ClearString(data);
                                 data = data.Replace("Id:", "");
                                 string[] info = data.Split(new string[] { "Name:" }, StringSplitOptions.RemoveEmptyEntries);
                                 int id = int.Parse(info[0]);
@@ -281,8 +280,9 @@ namespace UVTema1DATC
                                 Console.Write("Optiune:");
                                 int optiune3 = 0;
                                 int.TryParse(Console.ReadLine(), out optiune3);
-                                if(optiune3==1)
+                                if (optiune3 == 1)
                                 {
+                                    //detalii bere
                                     var response1 = client.GetAsync(Home + linkStil).Result;
                                     string data1 = response1.Content.ReadAsStringAsync().Result;
                                     data1 = data1.Replace("BreweryId", "Brewery");
@@ -305,7 +305,7 @@ namespace UVTema1DATC
                                     Console.Clear();
                                     Console.WriteLine("-----Informatii bere din stil-----");
                                     Console.WriteLine("Id bere:" + id1.ToString());
-                                    Console.WriteLine("Nume bere:" +  nume);
+                                    Console.WriteLine("Nume bere:" + nume);
                                     Console.WriteLine("Id berarie:" + idBerarie);
                                     Console.WriteLine("Nume berarie:" + numeBerarie);
                                     Console.WriteLine("Id stil:" + idStil);
@@ -330,7 +330,7 @@ namespace UVTema1DATC
                                     if (ListaBeri[int.Parse(infoDetalii[1])].LinkToReview.Contains("href:"))
                                     {
                                         string[] linkuri = ListaBeri[int.Parse(infoDetalii[1])].LinkToReview.Split(new string[] { "href:" }, StringSplitOptions.RemoveEmptyEntries);
-                                        for(int i=0;i<linkuri.Length;i++)
+                                        for (int i = 0; i < linkuri.Length; i++)
                                         {
                                             Console.Clear();
                                             Console.WriteLine("Review" + i.ToString());
@@ -338,7 +338,7 @@ namespace UVTema1DATC
                                             string data = response.Content.ReadAsStringAsync().Result;
                                             data = response.Content.ReadAsStringAsync().Result;
                                             if (data.Contains("removed") || data.Contains("changed") || data.Contains("unavailable"))
-                                            {                                             
+                                            {
                                                 Console.WriteLine("Ne exista review pentru aceasta bere, apasati orice tasta pentru a continua");
                                                 Console.ReadKey();
                                             }
