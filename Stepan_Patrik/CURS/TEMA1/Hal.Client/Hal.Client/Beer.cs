@@ -42,8 +42,9 @@ namespace Hal.Client
             int index = 0;
             Console.Clear();
             Console.WriteLine("-----------------------> BEER LIST <-----------------------");
-            foreach (Beer beer in beers)
-                Console.WriteLine(index++.ToString() + " " + beer.name);
+            if(beers != null)
+                foreach (Beer beer in beers)
+                    Console.WriteLine(index++.ToString() + " " + beer.name);
             Console.WriteLine("------------------------------------------------------------");
         }
 
@@ -58,11 +59,48 @@ namespace Hal.Client
             Console.WriteLine("----------------------------------------------------------");
         }
 
+        public static bool AddBeer(HttpClient client, string beer)
+        {
+            string json = JsonConvert.SerializeObject(new { Name = beer });
+            HttpContent content = new StringContent(json, Encoding.UTF8, "application/hal+json");
+            var httpResponse = client.PostAsync("/beers", content);
+
+            return true;
+        }
+
         public static List<Beer> GetBeersRequest(HttpClient client, string beers)
         {
             var response = client.GetAsync(beers).Result;
             var data = response.Content.ReadAsStringAsync().Result;
             var obj = JsonConvert.DeserializeObject<BeerResource>(data);
+
+            if (obj != null && obj.embedded != null)
+                return obj.embedded.beer;
+            else
+                return null;
+        }
+
+        public static List<Beer> GetBeersRequest(HttpClient client, string beers, long page, string searchTerm,
+            out long currentPage, out long totalPages, out long totalResults)
+        {
+            // Default values in case of error
+            currentPage = 1;
+            totalPages = 0;
+            totalResults = 0;
+
+
+            var response = /*searchTerm != ""? client.GetAsync(beers + "/?searchTerm=" + searchTerm).Result:*/
+                                               client.GetAsync(beers + "/?page=" + page.ToString()).Result ;
+            var data = response.Content.ReadAsStringAsync().Result;
+            if (data == null)
+                return null;
+            var obj = JsonConvert.DeserializeObject<BeerResource>(data);
+            if (obj == null)
+                return null;
+
+            currentPage = obj.page;
+            totalPages = obj.totalPages;
+            totalResults = obj.totalResults;
 
             if (obj != null && obj.embedded != null)
                 return obj.embedded.beer;
