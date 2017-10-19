@@ -8,7 +8,7 @@ import { IBrewery } from "../interfaces/IBrewery";
   styleUrls: ['./home-page.component.css']
 })
 export class HomePageComponent implements OnInit {
-    breweries: IBrewery;
+    breweries: IBrewery = {} as IBrewery;
 
     constructor(private _beerService: BeerService) {
         this.getBreweries();
@@ -18,6 +18,12 @@ export class HomePageComponent implements OnInit {
         this._beerService.getBreweries().subscribe((breweries: IBrewery) => {
             this.breweries = breweries;
             console.log(this.breweries);
+        }, error => console.log(error));
+    }
+
+    getBrewery(url: string) {
+        this._beerService.getBrewery(url).subscribe((breweries) => {
+            return breweries;            
         }, error => console.log(error));
     }
 

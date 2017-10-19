@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { BeerService } from './services/beer.service';
-import { HttpModule } from '@angular/http';
+import { HttpModule, JsonpModule } from '@angular/http';
 
 const appRoutes: Routes = [
   {path: '', component: HomePageComponent}
@@ -24,6 +24,7 @@ const appRoutes: Routes = [
     HttpModule,
     RouterModule.forRoot(appRoutes),
     AlertModule.forRoot(),
+    JsonpModule
   ],
   providers: [BeerService],
   bootstrap: [AppComponent]
