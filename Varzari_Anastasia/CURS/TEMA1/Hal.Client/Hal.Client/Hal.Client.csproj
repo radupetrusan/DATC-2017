@@ -46,10 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\..\..\..\..\..\..\..\Desktop\Tema1.cs" />
     <Compile Include="CBeer.cs" />
     <Compile Include="CBrewery.cs" />
     <Compile Include="JSONResources.cs" />
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
