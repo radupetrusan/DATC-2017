@@ -42,6 +42,7 @@ namespace Hal.Client
         [JsonProperty("href")]
         public string beerHref { get; set; }
     }
+
     public class CBeersPage
     {
         [JsonProperty("href")]
@@ -61,7 +62,7 @@ namespace Hal.Client
     public class CBeersEmbedded
     {
         [JsonProperty("beer")]
-        public CBeer beer { get; set; }
+        public List<CBeer> beer { get; set; }
 
     }
 
@@ -99,8 +100,14 @@ namespace Hal.Client
         public CBeerStyleLinks beerStyle { get; set; }
 
         [JsonProperty("brewery")]
-        public CHomeBreweryLinks beerBreweryLinks { get; set; }
+        public CBeerBreweryLinks beerBreweryLinks { get; set; }
 
+    }
+
+    public class CBeerBreweryLinks
+    {
+        [JsonProperty("href")]
+        public string beerBrwHref { get; set; }
     }
 
     public class CBeerSelfLinks
@@ -113,5 +120,92 @@ namespace Hal.Client
     {
         [JsonProperty("href")]
         public string beerStyleHref { get; set; }
+    }
+
+    public class CAllBeers
+    {
+        [JsonProperty("_embedded")]
+        public CAllBeerEmbedded embedded { get; set; }
+
+        [JsonProperty("_links")]
+        public CALLBeerLinks links { get; set; }
+
+        [JsonProperty("Page")]
+        public int page { get; set; }
+
+        [JsonProperty("TotalPages")]
+        public int totalPages { get; set; }
+
+        [JsonProperty("TotalResults")]
+        public int totalResults { get; set; }
+    }
+
+    public class CAllBeerEmbedded
+    {
+        [JsonProperty("beer")]
+        public List<CAllBeer> beer { get; set; }
+    }
+
+    public class CAllBeer
+    {
+        [JsonProperty("Id")]
+        public int allBeerId { get; set; }
+
+        [JsonProperty("Name")]
+        public string allBeerName { get; set; }
+
+        [JsonProperty("BreweryId")]
+        public CAllBeerLink allBeerlink { get; set; }
+    }
+
+    public class CAllBeerLink
+    {
+        [JsonProperty("self")]
+        public CALLBeerSelf CAllbeerSelf { get; set; }
+    }
+
+    public class CALLBeerSelf
+    {
+        [JsonProperty("href")]
+        public string allbeerSelfHref { get; set; }
+    }
+
+    public class CALLBeerLinks
+    {
+        [JsonProperty("beer")]
+        public List<CAllBeers> allBeers { get; set; }
+
+        [JsonProperty("next")]
+        public CAllBeerNext allBeerNext { get; set; }
+
+        [JsonProperty("page")]
+        public List<CAllBeerPage> allBeerPage { get; set; }
+
+        [JsonProperty("self")]
+        public CAllBeersSelf allBeersSelf { get; set; }
+
+
+    }
+
+    public class CAllBeersSelf
+    {
+        [JsonProperty("href")]
+        public string allBeerSelfHref { get; set; }
+
+    }
+
+    public class CAllBeerPage
+    {
+        [JsonProperty("href")]
+        public string allBeerPageHref { get; set; }
+
+        [JsonProperty("templated")]
+        public bool allBeerPageTemplated { get; set; }
+    }
+
+    public class CAllBeerNext
+    {
+        [JsonProperty("href")]
+        public string allBeerNext { get; set; }
     }
 }
