@@ -13,6 +13,9 @@
         <input type="submit" value="Incarca" />
     }
 </div>
+<div>
+    <p>@ViewBag.AccessUrl</p>
+</div>
 @foreach (var poza in Model)
 {
     <div class="poza">
@@ -37,7 +40,8 @@
             {
                 <span>no download URL</span>
             }
-            @Html.ActionLink("Share", "ShareAccess", "Home")
+            @Html.ActionLink("Share", "ShareAccess", "Home", new { desc = @poza.Description}, null)
+            
 
             <div style="overflow-y:scroll;max-height:70px">
                 @if (poza.Comments != null)
@@ -59,7 +63,3 @@
         </div>
     </div>
 }
-
-<div id="dialog-modal">
-    <p>acesta este un test</p>
-</div>

@@ -44,9 +44,11 @@ namespace AlbumPhoto.Controllers
             return View("Index", Session["poze"]);
         }
 
-        public ActionResult ShareAccess()
+        public ActionResult ShareAccess(string desc)
         {
-            return View();
+            List<Poza> poze = Session["poze"] as List<Poza>;
+            ViewBag.AccessUrl = "AccessUrl : " + poze.FirstOrDefault(p => p.Description.Equals(desc)).Url;
+            return View("Index", Session["poze"]);
         }
     }
 }

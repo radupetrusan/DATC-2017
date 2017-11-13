@@ -1,6 +1,7 @@
 ﻿using AlbumPhoto.Models;
 using AlbumPhoto.Service.Entities;
 using Microsoft.WindowsAzure.Storage;
+using Microsoft.WindowsAzure.Storage.Auth;
 using Microsoft.WindowsAzure.Storage.Blob;
 using Microsoft.WindowsAzure.Storage.Queue;
 using Microsoft.WindowsAzure.Storage.Table;
@@ -23,6 +24,7 @@ namespace AlbumPhoto.Service
         private CloudTable _filesTable;
         private CloudTable _commentsTable;
         private TableServiceContext _ctx;
+        private string _sharedAccessSignature;
 
         public AlbumFotoService()
         {
@@ -30,10 +32,22 @@ namespace AlbumPhoto.Service
             _account = CloudStorageAccount.Parse(ConfigurationManager.AppSettings["StorageConnectionString"]);
             _blobClient = _account.CreateCloudBlobClient();
             _photoContainer = _blobClient.GetContainerReference("poze");
+            BlobContainerPermissions containerPermissions = new BlobContainerPermissions();
+
+            containerPermissions.SharedAccessPolicies.Add(
+                "TwoHoursAccessPolicy", new SharedAccessBlobPolicy
+                {
+                    SharedAccessExpiryTime = DateTime.UtcNow.AddMinutes(1),
+                    Permissions = SharedAccessBlobPermissions.Write | SharedAccessBlobPermissions.Read
+                });
+            containerPermissions.PublicAccess = BlobContainerPublicAccessType.Off;
+
             if (_photoContainer.CreateIfNotExists())
             {
-                _photoContainer.SetPermissions(new BlobContainerPermissions() { PublicAccess = BlobContainerPublicAccessType.Blob });
+                
             }
+            _photoContainer.SetPermissions(containerPermissions);
+            _sharedAccessSignature = _photoContainer.GetSharedAccessSignature(new SharedAccessBlobPolicy(),"TwoHoursAccessPolicy");
 
             _tableClient = _account.CreateCloudTableClient();
             _filesTable = _tableClient.GetTableReference("files");
@@ -63,6 +77,15 @@ namespace AlbumPhoto.Service
             return comments;
         }
 
+        public  string GetAccessUrl(string fileName)
+        {
+            CloudBlobClient sasBlobClient = new CloudBlobClient(_account.BlobEndpoint, new StorageCredentials(_sharedAccessSignature));
+
+            CloudBlob blob = (CloudBlob)sasBlobClient.GetBlobReferenceFromServer(new Uri(fileName));
+
+            return blob.Uri.AbsoluteUri + _sharedAccessSignature;
+        }
+
         public List<Poza> GetPoze()
         {
             var poze = new List<Poza>();
@@ -75,7 +98,7 @@ namespace AlbumPhoto.Service
                 {
                     Description = file.RowKey,
                     ThumbnailUrl = file.ThumbnailUrl,
-                    Url = file.Url,
+                    Url = GetAccessUrl(file.Url),
                     Comments = GetComments(file.RowKey)
                 });
             }
@@ -109,7 +132,6 @@ namespace AlbumPhoto.Service
 
             _ctx.SaveChangesWithRetries();
         }
-
 
     }
 }
