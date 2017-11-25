@@ -15,4 +15,6 @@ namespace GenerareDateApi.Models
         public DbSet<TodoItem> TodoItems { get; set; }
 
     }
+
+ 
 }

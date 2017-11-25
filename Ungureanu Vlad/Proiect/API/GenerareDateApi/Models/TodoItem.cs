@@ -9,7 +9,7 @@ namespace GenerareDateApi.Models
     {
         public int Id { get; set; }
         public int idsenzor { get; set; }
-        public int temperatura { get; set; }
-        public int umiditate { get; set; }
+        public string latitudine { get; set; }
+        public string longitudine { get; set; }
     }
 }

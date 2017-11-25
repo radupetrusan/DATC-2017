@@ -76,3 +76,8 @@ E:\Vlad\An IV\Sem I\DATC\Proiect\AplicatieMobila\DATC\bin\Debug\OxyPlot.xml
 E:\Vlad\An IV\Sem I\DATC\Proiect\AplicatieMobila\DATC\bin\Debug\OxyPlot.Xamarin.Android.xml
 E:\Vlad\An IV\Sem I\DATC\Proiect\AplicatieMobila\DATC\bin\Debug\OxyPlot.dll.mdb
 E:\Vlad\An IV\Sem I\DATC\Proiect\AplicatieMobila\DATC\obj\Debug\android\assets\OxyPlot.dll.mdb
+E:\Vlad\An IV\Sem I\DATC\Proiect\AplicatieMobila\DATC\obj\Debug\res\drawable-xhdpi\ic_opacity_black_24dp.png
+E:\Vlad\An IV\Sem I\DATC\Proiect\AplicatieMobila\DATC\obj\Debug\res\drawable-xxhdpi\ic_opacity_black_24dp.png
+E:\Vlad\An IV\Sem I\DATC\Proiect\AplicatieMobila\DATC\obj\Debug\res\drawable-xxxhdpi\ic_opacity_black_24dp.png
+E:\Vlad\An IV\Sem I\DATC\Proiect\AplicatieMobila\DATC\obj\Debug\res\drawable-mdpi\ic_opacity_black_24dp.png
+E:\Vlad\An IV\Sem I\DATC\Proiect\AplicatieMobila\DATC\obj\Debug\res\drawable\icon.png

@@ -3,6 +3,7 @@ E:\Vlad\An IV\Sem I\DATC\Proiect\AplicatieMobila\DATC\obj\Debug\android\assets\J
 E:\Vlad\An IV\Sem I\DATC\Proiect\AplicatieMobila\DATC\obj\Debug\android\assets\Mono.Android.dll
 E:\Vlad\An IV\Sem I\DATC\Proiect\AplicatieMobila\DATC\obj\Debug\android\assets\System.Core.dll
 E:\Vlad\An IV\Sem I\DATC\Proiect\AplicatieMobila\DATC\obj\Debug\android\assets\System.dll
+E:\Vlad\An IV\Sem I\DATC\Proiect\AplicatieMobila\DATC\obj\Debug\android\assets\System.Net.Http.dll
 E:\Vlad\An IV\Sem I\DATC\Proiect\AplicatieMobila\DATC\obj\Debug\android\assets\System.Xml.dll
 E:\Vlad\An IV\Sem I\DATC\Proiect\AplicatieMobila\DATC\obj\Debug\android\assets\mscorlib.dll
 E:\Vlad\An IV\Sem I\DATC\Proiect\AplicatieMobila\DATC\obj\Debug\android\assets\OxyPlot.dll
@@ -28,7 +29,6 @@ E:\Vlad\An IV\Sem I\DATC\Proiect\AplicatieMobila\DATC\obj\Debug\android\assets\S
 E:\Vlad\An IV\Sem I\DATC\Proiect\AplicatieMobila\DATC\obj\Debug\android\assets\System.Runtime.InteropServices.dll
 E:\Vlad\An IV\Sem I\DATC\Proiect\AplicatieMobila\DATC\obj\Debug\android\assets\System.Runtime.Extensions.dll
 E:\Vlad\An IV\Sem I\DATC\Proiect\AplicatieMobila\DATC\obj\Debug\android\assets\System.Reflection.Extensions.dll
-E:\Vlad\An IV\Sem I\DATC\Proiect\AplicatieMobila\DATC\obj\Debug\android\assets\System.Net.Http.dll
 E:\Vlad\An IV\Sem I\DATC\Proiect\AplicatieMobila\DATC\obj\Debug\android\assets\System.Runtime.Serialization.dll
 E:\Vlad\An IV\Sem I\DATC\Proiect\AplicatieMobila\DATC\obj\Debug\android\assets\System.ServiceModel.Internals.dll
 E:\Vlad\An IV\Sem I\DATC\Proiect\AplicatieMobila\DATC\obj\Debug\android\assets\Mono.Security.dll

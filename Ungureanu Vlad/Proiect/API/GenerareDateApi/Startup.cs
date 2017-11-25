@@ -21,8 +21,11 @@ namespace GenerareDateApi
     {
         public void ConfigureServices(IServiceCollection services)
         {
+
+            services.AddDbContext<InregistrareContext>(opt => opt.UseInMemoryDatabase("InregistrareList"));
             services.AddDbContext<TodoContext>(opt => opt.UseInMemoryDatabase("TodoList"));
             services.AddMvc();
+        
         }
 
         public void Configure(IApplicationBuilder app)

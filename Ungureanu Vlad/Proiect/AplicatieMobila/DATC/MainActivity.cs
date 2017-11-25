@@ -10,12 +10,12 @@ using System.Text;
 
 namespace DATC
 {
-    [Activity(Label = "DATC", MainLauncher = true)]
+    [Activity(Label = "Irrigation Master", MainLauncher = true)]
     public class MainActivity : Activity,IOnMapReadyCallback
     {
         static HttpClient client = new HttpClient();
         GoogleMap mMap;
-        ToggleButton btnTempOrUmid;
+        Button btnTemp,btnUmid,btnPres;
         public void OnMapReady(GoogleMap googleMap)
         {
             LatLng markerlatLng = new LatLng(45.740363, 21.244295);
@@ -39,11 +39,15 @@ namespace DATC
             base.OnResume();
             if(Helper.vizualizareaCurenta==Helper.Vizualizare.Temperatura)
             {
-                btnTempOrUmid.Checked = false;
+               
+            }
+            else if(Helper.vizualizareaCurenta == Helper.Vizualizare.Umiditate)
+            {
+
             }
             else
             {
-                btnTempOrUmid.Checked = true;
+
             }
         }
 
@@ -51,15 +55,45 @@ namespace DATC
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.Main);
-            btnTempOrUmid = FindViewById<ToggleButton>(Resource.Id.btnTempOrUmid);
+            btnTemp = FindViewById<Button>(Resource.Id.btnTemp);
+            btnUmid = FindViewById<Button>(Resource.Id.btnUmid);
+            btnPres = FindViewById<Button>(Resource.Id.btnPres);
             SetupMap();
-            btnTempOrUmid.Click += BtnTempOrUmid_Click;
+            btnTemp.Click += BtnTemp_Click;
+            btnUmid.Click += BtnUmid_Click;
+            btnPres.Click += BtnPres_Click;
+            if (Helper.vizualizareaCurenta == Helper.Vizualizare.Temperatura)
+            {
+                //get heatmap
+            }
+            else if (Helper.vizualizareaCurenta == Helper.Vizualizare.Umiditate)
+            {
+                
+            }
+            else
+            {
+               
+            }
         }
-        
+
+        private void BtnPres_Click(object sender, EventArgs e)
+        {
+            Helper.vizualizareaCurenta = Helper.Vizualizare.Presiune;          
+        }
+
+        private void BtnUmid_Click(object sender, EventArgs e)
+        {
+            Helper.vizualizareaCurenta = Helper.Vizualizare.Umiditate;
+        }
+
+        private void BtnTemp_Click(object sender, EventArgs e)
+        {
+            Helper.vizualizareaCurenta = Helper.Vizualizare.Temperatura;
+        }
+
         private void BtnTempOrUmid_Click(object sender, EventArgs e)
         {
-            if(btnTempOrUmid.Checked)
-            {
+
                 //Umiditate
                 Helper.vizualizareaCurenta = Helper.Vizualizare.Umiditate;
                 /*GET from API
@@ -67,13 +101,7 @@ namespace DATC
                 var Home = "http://localhost:50922/api/values";
                 var response = client.GetAsync(Home).Result;
                 string data = response.Content.ReadAsStringAsync().Result;
-                */
-            }
-            else
-            {
-                //Temperatura
-                Helper.vizualizareaCurenta = Helper.Vizualizare.Temperatura;
-            }
+                */         
         }
 
         private void SetupMap()

@@ -16,7 +16,7 @@ namespace DATC
 {
    public  class Helper
     {
-        public enum Vizualizare { Temperatura, Umiditate}
+        public enum Vizualizare { Temperatura, Umiditate, Presiune}
         public static string senzorCurent;
         public static Vizualizare vizualizareaCurenta =Vizualizare.Temperatura;
                                                       

@@ -3,13 +3,24 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <ToggleButton
+    <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btnTempUmid"
-        android:textOff="Temperatura"
-        android:textOn="Umiditate" />
-  <OxyPlot.Xamarin.Android.PlotView
+        android:id="@+id/gridLayout1">
+      <Button
+          android:text="Temperatura"
+          android:id="@+id/btnTemp"
+          android:width="120dp"/>
+        <Button
+            android:text="Umiditate"
+            android:id="@+id/btnUmid"
+            android:width="120dp"/>
+        <Button
+            android:text="Presiune"
+            android:id="@+id/btnPres" 
+            android:width="120dp"/>
+    </GridLayout>
+    <OxyPlot.Xamarin.Android.PlotView
         android:id="@+id/pltSenzor"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

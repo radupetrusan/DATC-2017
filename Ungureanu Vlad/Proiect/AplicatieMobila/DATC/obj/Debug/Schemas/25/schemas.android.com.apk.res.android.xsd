@@ -2,7 +2,7 @@
 <xs:schema xmlns:android="http://schemas.android.com/apk/res/android" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/apk/res/android" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v25</xs:documentation>
-    <xs:documentation>18.11.2017 20:54:51</xs:documentation>
+    <xs:documentation>25.11.2017 20:43:53</xs:documentation>
   </xs:annotation>
   <xs:attribute name="accessibilityLiveRegion">
     <xs:annotation>
@@ -831,6 +831,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -1496,6 +1498,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -2221,6 +2225,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -2623,6 +2629,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -2956,6 +2964,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -3609,6 +3619,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -3977,6 +3989,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -4330,6 +4344,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -4641,6 +4657,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -4914,6 +4932,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -5640,6 +5660,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -6098,6 +6120,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -6527,6 +6551,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -7051,6 +7077,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -7394,6 +7422,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -7737,6 +7767,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -8120,6 +8152,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -8463,6 +8497,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -8927,6 +8963,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -9316,6 +9354,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -9622,6 +9662,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -10077,6 +10119,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -10507,6 +10551,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -11055,6 +11101,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -11550,6 +11598,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -12087,6 +12137,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -12777,6 +12829,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -13031,6 +13085,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -13285,6 +13341,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -13539,6 +13597,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -13793,6 +13853,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -14047,6 +14109,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -14301,6 +14365,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -14555,6 +14621,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -15014,6 +15082,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -15295,6 +15365,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -15549,6 +15621,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -15803,6 +15877,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -16057,6 +16133,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -16351,6 +16429,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -16615,6 +16695,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -16948,6 +17030,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -17242,6 +17326,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -17598,6 +17684,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -17852,6 +17940,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -18320,8 +18410,10 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@+id/" />
             <xs:enumeration value="@+id/checkedTextView1" />
-            <xs:enumeration value="@id/btnTempOrUmid" />
-            <xs:enumeration value="@id/btnTempUmid" />
+            <xs:enumeration value="@id/btnPres" />
+            <xs:enumeration value="@id/btnTemp" />
+            <xs:enumeration value="@id/btnUmid" />
+            <xs:enumeration value="@id/gridLayout1" />
             <xs:enumeration value="@id/map" />
             <xs:enumeration value="@id/pltSenzor" />
             <xs:enumeration value="@android:id/accessibilityActionContextClick" />
@@ -18423,6 +18515,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -18805,6 +18899,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -19154,6 +19250,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -19748,6 +19846,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -20104,6 +20204,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -20518,6 +20620,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -20892,6 +20996,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -21162,6 +21268,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -21877,6 +21985,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -22264,6 +22374,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -23330,6 +23442,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -23596,6 +23710,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -23907,6 +24023,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -24201,6 +24319,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -24455,6 +24575,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -24709,6 +24831,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -24963,6 +25087,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -25217,6 +25343,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -26006,6 +26134,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -26287,6 +26417,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -26630,6 +26762,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -27401,6 +27535,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -27774,6 +27910,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -28237,6 +28375,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -28612,6 +28752,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -28866,6 +29008,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -29694,6 +29838,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -29948,6 +30094,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -30202,6 +30350,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -30456,6 +30606,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -30890,6 +31042,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -31144,6 +31298,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -31578,6 +31734,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -31842,6 +32000,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -32175,6 +32335,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -32910,6 +33072,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -33468,6 +33632,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -33860,6 +34026,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -35091,6 +35259,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -35402,6 +35572,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -35758,6 +35930,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -36092,6 +36266,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -36346,6 +36522,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -36640,6 +36818,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -36894,6 +37074,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -37328,6 +37510,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -37592,6 +37776,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -37935,6 +38121,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -38278,6 +38466,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -38621,6 +38811,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -38954,6 +39146,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -39235,6 +39429,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -39489,6 +39685,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -39743,6 +39941,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -39997,6 +40197,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -40251,6 +40453,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -40505,6 +40709,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -40759,6 +40965,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -41219,6 +41427,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -41473,6 +41683,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -41727,6 +41939,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -42928,6 +43142,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -43376,6 +43592,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -44194,6 +44412,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -44630,6 +44850,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -45447,6 +45669,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -45928,6 +46152,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -46198,6 +46424,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -46452,6 +46680,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -46716,6 +46946,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -47059,6 +47291,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -47444,6 +47678,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -47698,6 +47934,8 @@
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_focused" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_normal" />
             <xs:enumeration value="@drawable/common_google_signin_btn_text_light_pressed" />
+            <xs:enumeration value="@drawable/ic_opacity_black_24dp" />
+            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />

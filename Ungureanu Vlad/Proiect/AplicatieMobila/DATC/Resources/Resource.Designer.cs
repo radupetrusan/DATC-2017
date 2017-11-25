@@ -237,6 +237,12 @@ namespace DATC
 			// aapt resource value: 0x7f020014
 			public const int common_google_signin_btn_text_light_pressed = 2130837524;
 			
+			// aapt resource value: 0x7f020015
+			public const int ic_opacity_black_24dp = 2130837525;
+			
+			// aapt resource value: 0x7f020016
+			public const int icon = 2130837526;
+			
 			static Drawable()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -259,14 +265,20 @@ namespace DATC
 			// aapt resource value: 0x7f07000a
 			public const int auto = 2131165194;
 			
-			// aapt resource value: 0x7f07000f
-			public const int btnTempOrUmid = 2131165199;
+			// aapt resource value: 0x7f070010
+			public const int btnPres = 2131165200;
 			
-			// aapt resource value: 0x7f07000d
-			public const int btnTempUmid = 2131165197;
+			// aapt resource value: 0x7f07000e
+			public const int btnTemp = 2131165198;
+			
+			// aapt resource value: 0x7f07000f
+			public const int btnUmid = 2131165199;
 			
 			// aapt resource value: 0x7f07000b
 			public const int dark = 2131165195;
+			
+			// aapt resource value: 0x7f07000d
+			public const int gridLayout1 = 2131165197;
 			
 			// aapt resource value: 0x7f070000
 			public const int hybrid = 2131165184;
@@ -277,8 +289,8 @@ namespace DATC
 			// aapt resource value: 0x7f07000c
 			public const int light = 2131165196;
 			
-			// aapt resource value: 0x7f070010
-			public const int map = 2131165200;
+			// aapt resource value: 0x7f070012
+			public const int map = 2131165202;
 			
 			// aapt resource value: 0x7f070001
 			public const int none = 2131165185;
@@ -286,8 +298,8 @@ namespace DATC
 			// aapt resource value: 0x7f070002
 			public const int normal = 2131165186;
 			
-			// aapt resource value: 0x7f07000e
-			public const int pltSenzor = 2131165198;
+			// aapt resource value: 0x7f070011
+			public const int pltSenzor = 2131165201;
 			
 			// aapt resource value: 0x7f070003
 			public const int satellite = 2131165187;

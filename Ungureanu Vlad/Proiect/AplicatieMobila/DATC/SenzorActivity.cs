@@ -19,7 +19,7 @@ namespace DATC
     [Activity(Label = "Date senzor")]
     public class SenzorActivity : Activity
     {
-        ToggleButton btnTempUmid;
+        Button btnTemp, btnUmid, btnPres;
         PlotView pltSenzor;
         public static List<int> dateSenzor = new List<int>();
         string axisTitle;
@@ -27,23 +27,50 @@ namespace DATC
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.DateSenzor);
-            btnTempUmid = FindViewById<ToggleButton>(Resource.Id.btnTempUmid);
-            btnTempUmid.Click += BtnTempUmid_Click;
+            btnTemp = FindViewById<Button>(Resource.Id.btnTemp);
+            btnUmid = FindViewById<Button>(Resource.Id.btnUmid);
+            btnPres = FindViewById<Button>(Resource.Id.btnPres);
+            btnTemp.Click += BtnTemp_Click;
+            btnUmid.Click += BtnUmid_Click;
+            btnPres.Click += BtnPres_Click;
+
             if (Helper.vizualizareaCurenta == Helper.Vizualizare.Temperatura)
             {
-                btnTempUmid.Checked = false;
                 axisTitle = "Temperatura (C)";
+            }
+            else if(Helper.vizualizareaCurenta == Helper.Vizualizare.Umiditate)
+            {
+                axisTitle = "Umiditatea (%)";
             }
             else
             {
-                btnTempUmid.Checked = true;
-                axisTitle = "Umiditatea (%)";
+                axisTitle = "Presiune (Pa)";
             }
-            btnTempUmid.Text += " " + Helper.senzorCurent;
             pltSenzor = FindViewById<PlotView>(Resource.Id.pltSenzor);
             dateSenzor.Add(34);
             dateSenzor.Add(32);
             dateSenzor.Add(36);
+            ActualizareGrafic();
+        }
+
+        private void BtnPres_Click(object sender, EventArgs e)
+        {
+            Helper.vizualizareaCurenta = Helper.Vizualizare.Presiune;
+            axisTitle = "Presiune (Pa)";
+            ActualizareGrafic();
+        }
+
+        private void BtnUmid_Click(object sender, EventArgs e)
+        {
+            Helper.vizualizareaCurenta = Helper.Vizualizare.Umiditate;
+            axisTitle = "Umiditate (%)";
+            ActualizareGrafic();
+        }
+
+        private void BtnTemp_Click(object sender, EventArgs e)
+        {
+            Helper.vizualizareaCurenta = Helper.Vizualizare.Temperatura;
+            axisTitle = "Temperatura (C)";
             ActualizareGrafic();
         }
 
@@ -55,33 +82,14 @@ namespace DATC
         private PlotModel CreatePlotModel()
         {
             LineSeries series1 = new LineSeries();
-            PlotModel plotModel = new PlotModel { Title = "Date" };
-            plotModel.Axes.Add(new LinearAxis { Position = AxisPosition.Left, Maximum = 50, Minimum = -20, MajorGridlineColor = OxyColors.White,Title= axisTitle, TitleColor = OxyColor.FromRgb(255, 255, 255) });
-            plotModel.Axes.Add(new LinearAxis { Position = AxisPosition.Bottom, MajorGridlineColor = OxyColors.White, Title ="Timp (s)", TitleColor= OxyColor.FromRgb(255,255,255)});
+            PlotModel plotModel = new PlotModel { Title = "Date " + Helper.senzorCurent, TitleColor= OxyColors.White };
+            plotModel.Axes.Add(new LinearAxis { Position = AxisPosition.Left, Maximum = 50, Minimum = -20, TextColor = OxyColors.White, AxislineColor = OxyColors.White, MajorGridlineColor = OxyColors.White,Title= axisTitle, TitleColor = OxyColor.FromRgb(255, 255, 255) });
+            plotModel.Axes.Add(new LinearAxis { Position = AxisPosition.Bottom,TextColor= OxyColors.White, MajorGridlineColor = OxyColors.White,AxislineColor= OxyColors.White, Title ="Timp (s)", TitleColor= OxyColor.FromRgb(255,255,255)});
             for (int i = 0; i < dateSenzor.Count; i++)
                 series1.Points.Add(new DataPoint(0.1 * i, dateSenzor[i]));
             plotModel.DefaultColors = new List<OxyColor> { OxyColors.White };
             plotModel.Series.Add(series1);
             return plotModel;
-        }
-
-        private void BtnTempUmid_Click(object sender, EventArgs e)
-        {
-            btnTempUmid.Text += " " + Helper.senzorCurent;
-            if (btnTempUmid.Checked)
-            {
-                //Umiditate
-                Helper.vizualizareaCurenta=Helper.Vizualizare.Umiditate;
-                axisTitle = "Umiditate (%)";
-                ActualizareGrafic();
-            }
-            else
-            {
-                //Temperatura
-                Helper.vizualizareaCurenta = Helper.Vizualizare.Temperatura;
-                axisTitle = "Temperatura (C)";
-                ActualizareGrafic();
-            }
         }
     }
 }

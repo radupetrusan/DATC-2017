@@ -69,10 +69,10 @@ namespace GenerareDateApi
 
                 connection.Open();
 
-                var queryString = $"insert into Valori (Id, IdSenzor, Temperatura, Umiditate) values ({item.Id}, {item.idsenzor}, {item.temperatura}, {item.umiditate});";
+                var queryString = $"insert into TabelaSenzori (id,idsenzor,latitudine,longitudine) values ({item.Id}, {item.idsenzor}, '{item.latitudine}', '{item.longitudine}');";
                 using (SqlCommand command = new SqlCommand(queryString, connection))
                 {
-                  //  command.ExecuteNonQuery();
+                    command.ExecuteNonQuery();
                 }
             }
             return CreatedAtRoute("GetTodo", new { id = item.Id }, item);
@@ -93,8 +93,8 @@ namespace GenerareDateApi
             }
 
             todo.idsenzor = item.idsenzor;
-            todo.temperatura = item.temperatura;
-            todo.umiditate = item.umiditate;
+            todo.latitudine = item.latitudine;
+            todo.longitudine = item.longitudine;
 
             _context.TodoItems.Update(todo);
             _context.SaveChanges();

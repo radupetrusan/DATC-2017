@@ -295,21 +295,25 @@ containing a value of this type.
         public static final int common_google_signin_btn_text_light_focused=0x7f020012;
         public static final int common_google_signin_btn_text_light_normal=0x7f020013;
         public static final int common_google_signin_btn_text_light_pressed=0x7f020014;
+        public static final int ic_opacity_black_24dp=0x7f020015;
+        public static final int icon=0x7f020016;
     }
     public static final class id {
         public static final int adjust_height=0x7f070005;
         public static final int adjust_width=0x7f070006;
         public static final int auto=0x7f07000a;
-        public static final int btnTempOrUmid=0x7f07000f;
-        public static final int btnTempUmid=0x7f07000d;
+        public static final int btnPres=0x7f070010;
+        public static final int btnTemp=0x7f07000e;
+        public static final int btnUmid=0x7f07000f;
         public static final int dark=0x7f07000b;
+        public static final int gridLayout1=0x7f07000d;
         public static final int hybrid=0x7f070000;
         public static final int icon_only=0x7f070007;
         public static final int light=0x7f07000c;
-        public static final int map=0x7f070010;
+        public static final int map=0x7f070012;
         public static final int none=0x7f070001;
         public static final int normal=0x7f070002;
-        public static final int pltSenzor=0x7f07000e;
+        public static final int pltSenzor=0x7f070011;
         public static final int satellite=0x7f070003;
         public static final int standard=0x7f070008;
         public static final int terrain=0x7f070004;
