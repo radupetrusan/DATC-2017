@@ -259,6 +259,12 @@ namespace DATC
 			// aapt resource value: 0x7f07000a
 			public const int auto = 2131165194;
 			
+			// aapt resource value: 0x7f07000f
+			public const int btnTempOrUmid = 2131165199;
+			
+			// aapt resource value: 0x7f07000d
+			public const int btnTempUmid = 2131165197;
+			
 			// aapt resource value: 0x7f07000b
 			public const int dark = 2131165195;
 			
@@ -271,14 +277,17 @@ namespace DATC
 			// aapt resource value: 0x7f07000c
 			public const int light = 2131165196;
 			
-			// aapt resource value: 0x7f07000d
-			public const int map = 2131165197;
+			// aapt resource value: 0x7f070010
+			public const int map = 2131165200;
 			
 			// aapt resource value: 0x7f070001
 			public const int none = 2131165185;
 			
 			// aapt resource value: 0x7f070002
 			public const int normal = 2131165186;
+			
+			// aapt resource value: 0x7f07000e
+			public const int pltSenzor = 2131165198;
 			
 			// aapt resource value: 0x7f070003
 			public const int satellite = 2131165187;
@@ -322,7 +331,10 @@ namespace DATC
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int Main = 2130903040;
+			public const int DateSenzor = 2130903040;
+			
+			// aapt resource value: 0x7f030001
+			public const int Main = 2130903041;
 			
 			static Layout()
 			{

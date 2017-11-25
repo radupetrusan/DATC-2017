@@ -300,13 +300,16 @@ containing a value of this type.
         public static final int adjust_height=0x7f070005;
         public static final int adjust_width=0x7f070006;
         public static final int auto=0x7f07000a;
+        public static final int btnTempOrUmid=0x7f07000f;
+        public static final int btnTempUmid=0x7f07000d;
         public static final int dark=0x7f07000b;
         public static final int hybrid=0x7f070000;
         public static final int icon_only=0x7f070007;
         public static final int light=0x7f07000c;
-        public static final int map=0x7f07000d;
+        public static final int map=0x7f070010;
         public static final int none=0x7f070001;
         public static final int normal=0x7f070002;
+        public static final int pltSenzor=0x7f07000e;
         public static final int satellite=0x7f070003;
         public static final int standard=0x7f070008;
         public static final int terrain=0x7f070004;
@@ -316,7 +319,8 @@ containing a value of this type.
         public static final int google_play_services_version=0x7f060000;
     }
     public static final class layout {
-        public static final int main=0x7f030000;
+        public static final int datesenzor=0x7f030000;
+        public static final int main=0x7f030001;
     }
     public static final class string {
         public static final int app_name=0x7f050011;

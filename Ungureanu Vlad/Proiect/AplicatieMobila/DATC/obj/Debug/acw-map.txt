@@ -2,6 +2,14 @@ DATC.MainActivity, DATC;md5590a0afcf27b0e6460237f9f5b8328cf.MainActivity
 DATC.MainActivity, DATC, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5590a0afcf27b0e6460237f9f5b8328cf.MainActivity
 DATC.MainActivity;md5590a0afcf27b0e6460237f9f5b8328cf.MainActivity
 datc.MainActivity;md5590a0afcf27b0e6460237f9f5b8328cf.MainActivity
+DATC.SenzorActivity, DATC;md5590a0afcf27b0e6460237f9f5b8328cf.SenzorActivity
+DATC.SenzorActivity, DATC, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5590a0afcf27b0e6460237f9f5b8328cf.SenzorActivity
+DATC.SenzorActivity;md5590a0afcf27b0e6460237f9f5b8328cf.SenzorActivity
+datc.SenzorActivity;md5590a0afcf27b0e6460237f9f5b8328cf.SenzorActivity
+OxyPlot.Xamarin.Android.PlotView, OxyPlot.Xamarin.Android;md576548fdf6897b70553b6b405e9653aa0.PlotView
+OxyPlot.Xamarin.Android.PlotView, OxyPlot.Xamarin.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md576548fdf6897b70553b6b405e9653aa0.PlotView
+OxyPlot.Xamarin.Android.PlotView;md576548fdf6897b70553b6b405e9653aa0.PlotView
+oxyplot.xamarin.android.PlotView;md576548fdf6897b70553b6b405e9653aa0.PlotView
 Android.Support.V4.App.SharedElementCallback/IOnSharedElementsReadyListenerImplementor, Xamarin.Android.Support.Compat;mono.android.support.v4.app.SharedElementCallback_OnSharedElementsReadyListenerImplementor
 Android.Support.V4.App.SharedElementCallback+IOnSharedElementsReadyListenerImplementor, Xamarin.Android.Support.Compat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.android.support.v4.app.SharedElementCallback_OnSharedElementsReadyListenerImplementor
 Android.Support.V4.App.SharedElementCallback.IOnSharedElementsReadyListenerImplementor;mono.android.support.v4.app.SharedElementCallback_OnSharedElementsReadyListenerImplementor
