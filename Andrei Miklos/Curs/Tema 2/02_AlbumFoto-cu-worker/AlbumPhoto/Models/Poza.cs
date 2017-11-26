@@ -10,6 +10,6 @@ namespace AlbumPhoto.Models
         public string Description { get; set; }
         public string Url { get; set; }
         public string ThumbnailUrl { get; set; }
-        public string Comments { get; set; }
+        public Dictionary<string,string> Comments { get; set; }
     }
 }
