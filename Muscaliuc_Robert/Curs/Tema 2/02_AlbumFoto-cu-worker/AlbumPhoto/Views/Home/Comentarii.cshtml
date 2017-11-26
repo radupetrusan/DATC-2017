@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "Comentarii";
+}
+
+<h2>Comentarii</h2>
+
+<div>
+    @foreach (var comentariu in Model)
+    {
+        <label>User:</label>
+        <p>@comentariu.MadeBy</p>
+        <label>Comentariu:</label>
+        <p>@comentariu.Text</p>
+    }
+</div>
