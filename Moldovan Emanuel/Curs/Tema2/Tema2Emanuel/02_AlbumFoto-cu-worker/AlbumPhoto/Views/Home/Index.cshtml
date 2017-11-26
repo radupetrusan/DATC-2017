@@ -6,6 +6,8 @@
 
 <h2 class="title">@ViewBag.Title</h2>
 
+
+
 <div class="action-bar">
     @using (Html.BeginForm("IncarcaPoza", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
     {
@@ -14,13 +16,9 @@
     }
 </div>
 
-@if (ViewBag.Link != null || ViewBag.Link != "")
+@if (ViewBag.Link != null && ViewBag.Link != "")
 {
-    <script type="text/javascript">
-      window.onload = function () {
-                alert("@ViewBag.Link");
-            };
-    </script>
+    <a href="@ViewBag.Link">@ViewBag.Link</a>
 
 }
 
