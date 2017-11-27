@@ -51,5 +51,13 @@ namespace AlbumPhoto.Controllers
             string numePoza = Request.Form["numePoza"];
             return View("Comentarii", service.GetComments(numePoza));
         }
+
+        [HttpPost]
+        public ActionResult VeziLinkAcces()
+        {
+            var service = new AlbumFotoService();
+            string numePoza = Request.Form["numePoza"];
+            return View("LinkAcces",null, service.GetBlobSasUri(numePoza));
+        }
     }
 }

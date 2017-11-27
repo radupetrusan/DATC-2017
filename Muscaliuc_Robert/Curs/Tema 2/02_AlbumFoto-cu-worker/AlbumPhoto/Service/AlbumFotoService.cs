@@ -123,6 +123,25 @@ namespace AlbumPhoto.Service
             _ctx.SaveChangesWithRetries();
         }
 
+        public string GetBlobSasUri(string photoName)
+        {
+            string sasBlobToken;
+            var blob = _photoContainer.GetBlockBlobReference(photoName);
+
+            SharedAccessBlobPolicy adHocSAS = new SharedAccessBlobPolicy()
+            {
+                // When the start time for the SAS is omitted, the start time is assumed to be the time when the storage service receives the request.
+                // Omitting the start time for a SAS that is effective immediately helps to avoid clock skew.
+                SharedAccessExpiryTime = DateTime.UtcNow.AddHours(2),
+                Permissions = SharedAccessBlobPermissions.Read | SharedAccessBlobPermissions.Write
+            };
+
+            // Generate the shared access signature on the blob, setting the constraints directly on the signature.
+            sasBlobToken = blob.GetSharedAccessSignature(adHocSAS);
+            return sasBlobToken;
+            
+        }
+        
 
 	}
 }

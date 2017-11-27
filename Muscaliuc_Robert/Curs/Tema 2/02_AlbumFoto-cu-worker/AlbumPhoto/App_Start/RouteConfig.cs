@@ -23,6 +23,11 @@ namespace AlbumPhoto
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Comentarii", id = UrlParameter.Optional }
             );
+            routes.MapRoute(
+                name: "AnotherPage",
+                url: "{controller}/{action}/{id}",
+                defaults: new { controller = "Home", action = "LinkAcces", id = UrlParameter.Optional }
+            );
         }
     }
 }
