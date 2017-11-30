@@ -26,7 +26,7 @@ namespace IrrigationWorker
             {
                 var result = _service.GetWeatherAsync("20", "45").Result;
                 _dal.SaveWeatherInfo(result);
-                Thread.Sleep(TimeSpan.FromSeconds(2));
+                Thread.Sleep(TimeSpan.FromMinutes(30));
             }
         }
     }

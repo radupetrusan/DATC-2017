@@ -9,7 +9,7 @@ namespace IrrigationWorker.Services
 {
     public class DAL
     {
-        private readonly string connString = "Server=tcp:irrigationtempserver.database.windows.net,1433;Initial Catalog=IrrigationTempDB;Persist Security Info=False;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+        private readonly string connString = "Server=tcp:irrigationtempserver.database.windows.net,1433;Initial Catalog=IrrigationTempDB;Persist Security Info=False;User ID=aprodaniuc;Password=P@ssw0rd123!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
 
         public void SaveWeatherInfo(string info)
         {
